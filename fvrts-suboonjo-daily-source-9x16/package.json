@@ -1,0 +1,9 @@
+{
+  "name": "fvrts-suboonjo-daily",
+  "version": "1.0.0",
+  "private": true,
+  "description": "fvrts Su Boon Jo Day 1-7 video, DAY labels replaced by a Kurdish 'daily effect' badge with the product (9:16, 24 fps, 19 s)",
+  "dependencies": {
+    "playwright-core": "^1.63.0"
+  }
+}
