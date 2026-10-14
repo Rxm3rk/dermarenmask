@@ -1,0 +1,9 @@
+{
+  "name": "fvrts-routine-film",
+  "version": "1.0.0",
+  "private": true,
+  "description": "fvrts barrier routine — cel / line-boil motion film (9:16, 24 fps, 40 s)",
+  "dependencies": {
+    "playwright-core": "^1.63.0"
+  }
+}

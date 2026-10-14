@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="ckb">
+<head>
+<meta charset="utf-8">
+<title>fvrts Launch</title>
+<style>
+@font-face{font-family:Inter;src:url(fonts/inter-latin-400-normal.woff2) format('woff2');font-weight:400}
+@font-face{font-family:Inter;src:url(fonts/inter-latin-500-normal.woff2) format('woff2');font-weight:500}
+@font-face{font-family:Inter;src:url(fonts/inter-latin-600-normal.woff2) format('woff2');font-weight:600}
+@font-face{font-family:Inter;src:url(fonts/inter-latin-700-normal.woff2) format('woff2');font-weight:700}
+@font-face{font-family:Inter;src:url(fonts/inter-latin-800-normal.woff2) format('woff2');font-weight:800}
+@font-face{font-family:Somar;src:url(fonts/somar-light.ttf) format('truetype');font-weight:300}
+@font-face{font-family:Somar;src:url(fonts/somar-regular.ttf) format('truetype');font-weight:400}
+@font-face{font-family:Somar;src:url(fonts/somar-medium.ttf) format('truetype');font-weight:500}
+@font-face{font-family:Somar;src:url(fonts/somar-black.ttf) format('truetype');font-weight:900}
+html,body{margin:0;padding:0;background:#FCFCFB;overflow:hidden;width:1080px;height:1920px}
+#stage{position:absolute;left:0;top:0;width:1080px;height:1920px;overflow:hidden;background:#FDF8F9;
+  -webkit-font-smoothing:antialiased;text-rendering:geometricPrecision}
+.shot{position:absolute;inset:0;overflow:hidden;display:none}
+.cam{position:absolute;left:-100px;top:-100px;width:1280px;height:2120px;transform-origin:640px 1060px}
+.full{position:absolute;inset:0}
+.frame{position:absolute;left:100px;top:100px;width:1080px;height:1920px}
+.abs{position:absolute;left:0;top:0}
+.gl{position:absolute;left:0;top:0;width:1080px;height:1920px}
+.gl canvas{position:absolute;left:0;top:0;width:1080px;height:1920px}
+.overlay{position:absolute;inset:0;pointer-events:none}
+.ku{font-family:Somar,sans-serif;direction:rtl;unicode-bidi:isolate}
+.lat{font-family:Inter,sans-serif}
+.ko{font-family:'Malgun Gothic',sans-serif}
+.w{display:inline-block;will-change:transform}
+.glass{background:rgba(255,255,255,.46);-webkit-backdrop-filter:blur(18px) saturate(1.6);backdrop-filter:blur(18px) saturate(1.6);
+  border:1px solid rgba(255,255,255,.92);box-shadow:0 12px 34px rgba(150,70,95,.12),inset 0 1px 0 rgba(255,255,255,.95);border-radius:999px}
+.frost{position:absolute;display:grid;white-space:nowrap}
+.frost>div{grid-area:1/1}
+.chip{display:inline-flex;align-items:center;gap:10px;height:50px;padding:0 22px;font:600 21px Inter;color:#1D1A1B;letter-spacing:.01em}
+.chip i{width:11px;height:11px;border-radius:50%;display:block}
+img{display:block}
+</style>
+<script type="importmap">{"imports":{"three":"./vendor/three.module.js"}}</script>
+</head>
+<body>
+<div id="stage"></div>
+<svg width="0" height="0" style="position:absolute"><defs id="defs"></defs></svg>
+<script type="module" src="main.js"></script>
+</body>
+</html>

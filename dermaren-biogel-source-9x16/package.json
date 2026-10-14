@@ -1,0 +1,9 @@
+{
+  "name": "dermaren-biogel-film",
+  "version": "1.0.0",
+  "private": true,
+  "type": "commonjs",
+  "dependencies": {
+    "playwright-core": "^1.63.0"
+  }
+}

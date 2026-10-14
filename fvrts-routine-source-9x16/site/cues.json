@@ -1,0 +1,148 @@
+{
+ "FPS": 24,
+ "FRAMES": 960,
+ "BPM": 120,
+ "beat0": 0,
+ "frames": {
+  "land1": 12,
+  "land2": 24,
+  "land3": 36,
+  "title": 48,
+  "titleAr": 72,
+  "question": 96,
+  "qAr": 114,
+  "tilt": 102,
+  "crouch": 126,
+  "leap": 132,
+  "dry": 144,
+  "crack": 150,
+  "yawn": 170,
+  "qOut": 182,
+  "tonerIn": 192,
+  "twist": 204,
+  "capPop": 216,
+  "tiltT": 218,
+  "pour": 228,
+  "splash": 234,
+  "tonerLine": 204,
+  "tonerChip": 252,
+  "pourEnd": 276,
+  "capBack": 288,
+  "capClick": 300,
+  "tonerOut": 324,
+  "serumIn": 336,
+  "pump1": 348,
+  "pump2": 360,
+  "pump3": 372,
+  "serumLine": 348,
+  "serumChips": 400,
+  "shine": 420,
+  "serumOut": 452,
+  "creamIn": 480,
+  "squeeze": 492,
+  "squirt": 504,
+  "creamLine": 492,
+  "pipeEnd": 528,
+  "seal": 538,
+  "deep": 546,
+  "creamChips": 552,
+  "creamOut": 602,
+  "lock": 624,
+  "iris": 636,
+  "zoom": 640,
+  "lensPop": 650,
+  "wink": 660,
+  "result": 672,
+  "resultAr": 688,
+  "starWipe": 756,
+  "end": 768,
+  "e1": 780,
+  "e2": 792,
+  "e3": 804,
+  "badges": 816,
+  "arrows": 834,
+  "logo": 768,
+  "tag": 840,
+  "tagAr": 856,
+  "final": 912,
+  "hold": 924,
+  "button": 948,
+  "flip": 528,
+  "tada": 540,
+  "inflate": 548,
+  "heroIn": 612
+ },
+ "wave": {
+  "x0": 540,
+  "reach": 700,
+  "tau": 14
+ },
+ "drops": [
+  [
+   349,
+   360,
+   90,
+   18
+  ],
+  [
+   350,
+   366,
+   180,
+   26
+  ],
+  [
+   351,
+   372,
+   270,
+   34
+  ],
+  [
+   361,
+   378,
+   360,
+   40
+  ],
+  [
+   362,
+   384,
+   450,
+   22
+  ],
+  [
+   363,
+   390,
+   540,
+   30
+  ],
+  [
+   373,
+   396,
+   630,
+   38
+  ],
+  [
+   374,
+   402,
+   715,
+   26
+  ]
+ ],
+ "gaps": [
+  [
+   942,
+   510
+  ],
+  [
+   674,
+   516
+  ],
+  [
+   406,
+   522
+  ],
+  [
+   138,
+   528
+  ]
+ ]
+}
