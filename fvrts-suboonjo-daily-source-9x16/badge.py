@@ -3,7 +3,7 @@
   python badge.py   -> assets/overlay_montage.png, assets/overlay_split.png  (1080x1920, transparent)
 
 Montage (DAY 1..7): the badge. The real bottle stands in it and rises out of the card, beside کاریگەری ڕۆژانە.
-Split screen (DAY 1 / DAY 7): the same card with one word: پێش (before) on the top half, دوای (after) on the bottom.
+Split screen (DAY 1 / DAY 7): the same card with one word: پێش (before) on the top half, پاش (after) on the bottom.
 Every card covers the brush label it replaces with ~15-25 px to spare (edit.py check proves it)."""
 import base64, pathlib, subprocess
 
@@ -11,14 +11,14 @@ HERE = pathlib.Path(__file__).parent
 FONT = HERE.parent / 'UniSIRWAN Somar Black.ttf'
 BOTTLE = HERE / 'assets' / 'bottle_upright.png'
 TEXT = 'کاریگەری ڕۆژانە'             # the supervisor's copy, verbatim; one word per line, right-aligned
-BEFORE, AFTER = 'پێش', 'دوای'         # the before/after captions on the split screen
+BEFORE, AFTER = 'پێش', 'پاش'          # the before/after captions on the split screen
 INK, CARD = '#121212', '#FDF8F9'      # fvrts ink and page colours (fvrts-launch-source-9x16/site/main.js)
 SIZE, CAPTION, RADIUS, PAD = 54, 96, 26, 14   # badge type px, caption type px, corner px, inner padding px
-BOTTLE_H = 286                        # the product: 1.7x the card's inner height, so it rises ~100 px out of the card
+BOTTLE_H, BASE = 320, 10              # the product: 1.9x the card's inner height, its base 10 px above the card's bottom edge
 
 # kind, x, y, w, h of each card on the 1080x1920 canvas (the bottle rises above its card)
 OVERLAYS = {
-    'overlay_montage': [('badge', 66, 194, 436, 196, TEXT)],         # DAY 1..7 label: x 88-396, y 218-374
+    'overlay_montage': [('badge', 66, 204, 450, 196, TEXT)],         # DAY 1..7 label: x 88-396, y 218-374; bottle top at y 70
     'overlay_split': [('caption', 32, 82, 340, 186, BEFORE),         # DAY 1 label: x 45-333, y 101-250
                       ('caption', 32, 984, 340, 186, AFTER)],        # DAY 7 label: x 50-356, y 999-1154 (seam at y 960)
 }
@@ -35,7 +35,7 @@ def page(cards):
         if kind == 'badge':
             l1, l2 = text.split(' ', 1)
             inner = f'''
-    <img class="bottle" data-m="bottle{i}" src="data:image/png;base64,{bottle}" style="height:{BOTTLE_H}px;left:{PAD + 2}px;top:{h - 12 - BOTTLE_H}px">
+    <img class="bottle" data-m="bottle{i}" src="data:image/png;base64,{bottle}" style="height:{BOTTLE_H}px;left:{PAD + 2}px;top:{h - BASE - BOTTLE_H}px">
     <div class="txt" data-m="text{i}" style="right:{PAD + 10}px"><span>{l1}</span><span>{l2}</span></div>'''
         else:
             inner = f'''

@@ -1,5 +1,5 @@
 """The edit: the supplied video, untouched, with every "DAY n" label covered by an overlay from badge.py
-(the product badge over the Day 1-7 montage, پێش / دوای over the before/after split screen).
+(the product badge over the Day 1-7 montage, پێش / پاش over the before/after split screen).
 
   python edit.py stills 0 243 244 383 384 420   -> out/stills/fNNNN.png (full-size composites)
   python edit.py render                         -> ../fvrts_SuBoonJo_Daily_1080x1920.mp4 (needs work/audio_master.wav)
